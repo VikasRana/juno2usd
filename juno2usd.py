@@ -21,6 +21,7 @@ soup = BeautifulSoup(content, "html.parser")
 element = soup.find("span", {"class": "price"})
 str_price = element.text
 
+# Final calculation, I'm bad at Mathematics. Python do it for me pls!!
 print('\n')
 print('Found release price -> {} GBP.'.format(str_price))
 price_without_symbol = str_price[1:] # without the GBP symbol
